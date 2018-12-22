@@ -70,6 +70,8 @@ line-height: 21px;
 color: #ffffff;
 font-family: "Montserrat";
 }
+
+/* end top bar */
 .main-bar {
     z-index: auto;
     position: absolute;
@@ -86,19 +88,20 @@ color: #222222;
 font-family: "Montserrat";
 font-weight: bold;
 }
-
-.nav-bar > ul{
+.nav-bar >.inline-menu > ul{
+    padding-left: 320px
+}
+.inline-menu > ul{
     list-style: none;
     margin-top:0px;
     display: inline-flex;
-    padding-left: 320px
-}
-.nav-bar > ul >li{
-    padding-right: 14px;
-    padding-left: 14px;
     
 }
-.nav-bar > ul >li >a{
+.inline-menu > ul >li{
+    padding-right: 28px;
+    
+}
+.inline-menu> ul >li >a{
     font-size: 13px;
 line-height: 20px;
 color: #333333;
@@ -106,7 +109,12 @@ font-family: "Montserrat";
 text-align: right;
 display: block
 }
+.inline-menu-active{
+    color: #00c8c8 !important;
+}
+ 
 
+/* end main bar */
 
 .search { 
     position: relative; 
@@ -139,6 +147,7 @@ color: #989898;
     height: 920px;
     background-color: #f8f8f8;
   }
+  /* start main content */
   .main-content{
       margin-right: 67px;
       margin-left:76px
@@ -153,4 +162,122 @@ border: 0;
 border-top: 1px solid #eeeeee;
 padding: 0;
 }
+
+.inline-menu > ul{
+    padding-inline-start: 0px;
+}
+
+/* cards  */
+.cards{
+    list-style: none;
+    padding-inline-start: 0px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.cards > .double{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.cards > .card-item{
+    text-align: center;
+    position: relative;
+    margin: 10px;
+    background-color: #f8f8f8;
+}
+
+.card-item .card{
+    margin: 0px;
+   position: relative;
+}
+.card-item .caption{
+    font-size: 21px;
+letter-spacing: 1px;
+color: #9a9a9a;
+font-family: "Montserrat";
+font-weight: 300;
+position: absolute;
+top:16px;
+left:18px;
+}
+.details-link{
+position: absolute;
+top:50%;
+left: 45%;
+font-size: 48px;
+line-height: 20px;
+color: #ffffff;
+box-shadow: 1px 1.732px 16px rgba(0,0,0,0.13);
+display:none;
+}
+/* info */
+
+.card-item > .info{
+    background-color: #ffffff;
+    display: none;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    z-index: 99;
+    width: 100%;
+}
+.card-item:hover .info,.card-item:hover .details-link{
+    display: block;
+}
+.card-item:hover {
+box-shadow: 0 0 24px rgba(0,0,0,0.14);
+background-color: #f8f8f8;
+}
+
+.card-item >.info>h3{
+   
+    font-size: 13px;
+    line-height: 20px;
+    color: #727272;
+    font-family: "Montserrat";
+    text-align: center;
+
+}
+.card-item >.info>p{
+   
+    font-size: 15px;
+    line-height: 22px;
+    color: #8e8c8c;
+    font-family: "Roboto";
+    text-align: center;
+}
+.card-item .controls button{
+    width: 30px;
+height: 30px;
+border-radius: 15px;
+text-decoration: none;
+border: none;
+padding: 0px;
+
+font-size: 18px;
+    line-height: 36px;
+    color: #ffffff;
+    
+    text-align: center;
+}
+.card-item .controls>.cart{
+    background-color: #00c8c8;
+    
+}
+.card-item .controls>.wishlist{
+
+    background-color: #727272;
+
+}
+
+.card-item .controls>.compare{
+    background-color: #727272;
+  
+
+}
+
+
+
+
+
 
