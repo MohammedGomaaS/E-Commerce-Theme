@@ -3,10 +3,17 @@
 
 <head>
     <title>Made In Egypt</title>
+
+
     <meta charset="utf-8">
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Made In Egypt </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="just for playing" />
+    <meta name="author" content="Mohammed Gomaa" />
+
     <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="styles/css/interactions.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="styles/js/script.js"></script>
@@ -17,7 +24,14 @@
     <header>
         <!-- top bar  -->
         <section class="top-bar">
-            <div class="currency"><a href="#">Currency:GPB <i class="fa fa-angle-down " style="padding-left: 5px"></i></a></div>
+            <div class="currency"><a href="#">Currency:GPB <i class="fa fa-angle-down " style="padding-left: 5px"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">GPB</a>
+                    <a href="#">Egypt</a>
+                    <a href="#">UAE</a>
+                    <a href="#">$</a>
+                </div>
+            </div>
             <div class="sign-in"><a href="#">sign in</a></div>
             <div class="sign-up"><a href="#">sign up</a></div>
             <div class="cart"><i class="fa fa-shopping-cart cart-icon"></i><a href="#">empty <i class="fa fa-angle-down "
@@ -33,21 +47,205 @@
             <section class="nav-bar">
                 <div class="inline-menu">
                     <ul>
-                        <li><a class="inline-menu-active" href="#">MENS </a>
-                            <i class="fa fa-angle-down " style="padding-left: 5px"></i>
-                        </li>
-                        <li><a href="#">WOMENS </a>
-                            <i class="fa fa-angle-down " style="padding-left: 5px"></i>
-                        </li>
-                        <li><a href="#"> THE BRAND</a>
-                            <i class="fa fa-angle-down " style="padding-left: 5px"></i>
-                        </li>
-                        <li><a href="#"> LOCAL STORES</a>
-                            <i class="fa fa-angle-down " style="padding-left: 5px"></i>
+                        <li><a class="inline-menu-active" href="#">MENS <br>
+                                <i class="fa fa-angle-down "></i>
+                            </a>
+                            <div class="sub-nav">
+                                <section class="sub-nav-links">
+                                    <div class="sub-nav-link">
+                                        <h3>casuals </h3>
+                                        <ul>
+                                            <li><a href="#">Jackets</a></li>
+                                            <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                            <li><a href="#">Polo Shirts</a></li>
+                                            <li><a href="#">Sportswear</a></li>
+                                            <li><a href="#">Trousers & Chinos</a></li>
+                                            <li><a href="#">T-Shirts</a></li>
 
+                                        </ul>
+                                    </div>
+                                    <div class="sub-nav-link">
+                                        <h3>Formal </h3>
+                                        <ul>
+                                            <li><a href="#">Jackets</a></li>
+                                            <li><a href="#">Shirts</a></li>
+                                            <li><a href="#">Suits</a></li>
+                                            <li><a href="#">Trousers</a></li>
+                                        </ul>
+                                    </div>
+
+
+                                </section>
+                                <section class="sub-nav-banner">
+                                    <h3>
+                                        Autumn sale!<br>
+                                        <span style="font-weight:normal">
+                                            up to 50% off
+                                        </span>
+
+                                    </h3>
+                                </section>
+                            </div>
                         </li>
-                        <li><a href="#">LOOK BOOK </a>
-                            <i class="fa fa-angle-down " style="padding-left: 5px"></i>
+                        <li><a href="#">WOMENS <br>
+                                <i class="fa fa-angle-down " style="padding-left: 5px"></i>
+                            </a>
+                            <div class="sub-nav">
+                                <section class="sub-nav-links">
+                                    <div class="sub-nav-link">
+                                        <h3>casuals </h3>
+                                        <ul>
+                                            <li><a href="#">Jackets</a></li>
+                                            <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                            <li><a href="#">Polo Shirts</a></li>
+                                            <li><a href="#">Sportswear</a></li>
+                                            <li><a href="#">Trousers & Chinos</a></li>
+                                            <li><a href="#">T-Shirts</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="sub-nav-link">
+                                        <h3>Formal </h3>
+                                        <ul>
+                                            <li><a href="#">Jackets</a></li>
+                                            <li><a href="#">Shirts</a></li>
+                                            <li><a href="#">Suits</a></li>
+                                            <li><a href="#">Trousers</a></li>
+                                        </ul>
+                                    </div>
+
+
+                                </section>
+                                <section class="sub-nav-banner">
+                                    <h3>
+                                        Autumn sale!<br>
+                                        <span style="font-weight:normal">
+                                            up to 50% off
+                                        </span>
+
+                                    </h3>
+                                </section>
+                            </div>
+                        </li>
+                        <li><a href="#"> THE BRAND<br>
+                                <i class="fa fa-angle-down " style="padding-left: 5px"></i>
+                            </a>
+                            <div class="sub-nav">
+                                <section class="sub-nav-links">
+                                    <div class="sub-nav-link">
+                                        <h3>casuals </h3>
+                                        <ul>
+                                            <li><a href="#">Jackets</a></li>
+                                            <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                            <li><a href="#">Polo Shirts</a></li>
+                                            <li><a href="#">Sportswear</a></li>
+                                            <li><a href="#">Trousers & Chinos</a></li>
+                                            <li><a href="#">T-Shirts</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="sub-nav-link">
+                                        <h3>Formal </h3>
+                                        <ul>
+                                            <li><a href="#">Jackets</a></li>
+                                            <li><a href="#">Shirts</a></li>
+                                            <li><a href="#">Suits</a></li>
+                                            <li><a href="#">Trousers</a></li>
+                                        </ul>
+                                    </div>
+
+
+                                </section>
+                                <section class="sub-nav-banner">
+                                    <h3>
+                                        Autumn sale!<br>
+                                        <span style="font-weight:normal">
+                                            up to 50% off
+                                        </span>
+
+                                    </h3>
+                                </section>
+                            </div>
+                        </li>
+                        <li><a href="#"> LOCAL STORES<br>
+                                <i class="fa fa-angle-down " style="padding-left: 5px"></i>
+                            </a>
+                            <div class="sub-nav">
+                                <section class="sub-nav-links">
+                                    <div class="sub-nav-link">
+                                        <h3>casuals </h3>
+                                        <ul>
+                                            <li><a href="#">Jackets</a></li>
+                                            <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                            <li><a href="#">Polo Shirts</a></li>
+                                            <li><a href="#">Sportswear</a></li>
+                                            <li><a href="#">Trousers & Chinos</a></li>
+                                            <li><a href="#">T-Shirts</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="sub-nav-link">
+                                        <h3>Formal </h3>
+                                        <ul>
+                                            <li><a href="#">Jackets</a></li>
+                                            <li><a href="#">Shirts</a></li>
+                                            <li><a href="#">Suits</a></li>
+                                            <li><a href="#">Trousers</a></li>
+                                        </ul>
+                                    </div>
+
+
+                                </section>
+                                <section class="sub-nav-banner">
+                                    <h3>
+                                        Autumn sale!<br>
+                                        <span style="font-weight:normal">
+                                            up to 50% off
+                                        </span>
+
+                                    </h3>
+                                </section>
+                            </div>
+                        </li>
+                        <li><a href="#">LOOK BOOK <br>
+                                <i class="fa fa-angle-down " style="padding-left: 5px"></i>
+                            </a>
+                            <div class="sub-nav">
+                                <section class="sub-nav-links">
+                                    <div class="sub-nav-link">
+                                        <h3>casuals </h3>
+                                        <ul>
+                                            <li><a href="#">Jackets</a></li>
+                                            <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                            <li><a href="#">Polo Shirts</a></li>
+                                            <li><a href="#">Sportswear</a></li>
+                                            <li><a href="#">Trousers & Chinos</a></li>
+                                            <li><a href="#">T-Shirts</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="sub-nav-link">
+                                        <h3>Formal </h3>
+                                        <ul>
+                                            <li><a href="#">Jackets</a></li>
+                                            <li><a href="#">Shirts</a></li>
+                                            <li><a href="#">Suits</a></li>
+                                            <li><a href="#">Trousers</a></li>
+                                        </ul>
+                                    </div>
+
+
+                                </section>
+                                <section class="sub-nav-banner">
+                                    <h3>
+                                        Autumn sale!<br>
+                                        <span style="font-weight:normal">
+                                            up to 50% off
+                                        </span>
+
+                                    </h3>
+                                </section>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -57,7 +255,15 @@
                 <input type="search" name="search" placeholder="Search">
             </section>
         </div>
-        <section class="slider"></section>
+        <section class="slider">
+            <div class="slider-item">
+                <img src="images/2.png">
+                <h1>AVE</h1>
+                <a href="#">
+                    shop men’s collection
+                </a>
+            </div>
+        </section>
     </header>
     <!-- end header -->
     <main class="main-content">
@@ -84,10 +290,88 @@
         <!-- cards -->
         <section>
             <ul class="cards">
+                <li class="card-item one">
+                    <a href="#">
+                        <figure class="card">
+                            <div class="photos">
+                                <img src="images/2.png" class="card-img1" />
+                                <img src="images/1.png" class="card-img2" />
+                           
+                            </div>
+                            <figcaption class="caption">
+                                £89.99
+                            </figcaption>
+                            <span class="details-link">
+                                <i class="fa fa-info-circle "></i>
+                            </span>
+                        </figure>
+                    </a>
+                    <div class="info">
+                        <h3>Womens burnt orange casual tee £29.95</h3>
+                        <p>
+                            Classic casual t-shirt for women on the move.
+                            100% cotton.
+
+                        </p>
+                        <div class="controls">
+                            <button class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                            <button class="wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button class="compare">
+                                <i class="fa fa-compress"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </li>
+                <li class="card-item one">
+                    <a href="#">
+                        <figure class="card">
+                            <div class="photos">
+                                <img src="images/2.png" class="card-img1" />
+                                <img src="images/1.png" class="card-img2" />
+                            </div>
+                            <figcaption class="caption">
+                                £89.99
+                            </figcaption>
+                            <span class="details-link">
+                                <i class="fa fa-info-circle "></i>
+                            </span>
+                        </figure>
+                    </a>
+                    <div class="info">
+                        <h3>Womens burnt orange casual tee £29.95</h3>
+                        <p>
+                            Classic casual t-shirt for women on the move.
+                            100% cotton.
+
+                        </p>
+                        <div class="controls">
+                            <button class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                            <button class="wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button class="compare">
+                                <i class="fa fa-compress"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </li>
                 <li class="card-item double">
                     <a href="#">
                         <figure class="card">
-                            <img src="images/2.png" />
+                            <div class="photos">
+                                <img src="images/2.png" class="card-img1" />
+                                <img src="images/1.png" class="card-img2" />
+                            </div>
                             <figcaption class="caption">
                                 £89.99
                             </figcaption>
@@ -118,10 +402,13 @@
 
                     </div>
                 </li>
-                <li class="card-item">
+                <li class="card-item double">
                     <a href="#">
                         <figure class="card">
-                            <img src="images/1.png" />
+                            <div class="photos">
+                                <img src="images/2.png" class="card-img1" />
+                                <img src="images/1.png" class="card-img2" />
+                            </div>
                             <figcaption class="caption">
                                 £89.99
                             </figcaption>
@@ -130,7 +417,6 @@
                             </span>
                         </figure>
                     </a>
-
                     <div class="info">
                         <h3>Womens burnt orange casual tee £29.95</h3>
                         <p>
@@ -153,10 +439,13 @@
 
                     </div>
                 </li>
-                <li class="card-item">
+                <li class="card-item one">
                     <a href="#">
                         <figure class="card">
-                            <img src="images/1.png" />
+                            <div class="photos">
+                                <img src="images/2.png" class="card-img1" />
+                                <img src="images/1.png" class="card-img2" />
+                            </div>
                             <figcaption class="caption">
                                 £89.99
                             </figcaption>
@@ -165,7 +454,6 @@
                             </span>
                         </figure>
                     </a>
-
                     <div class="info">
                         <h3>Womens burnt orange casual tee £29.95</h3>
                         <p>
@@ -188,10 +476,13 @@
 
                     </div>
                 </li>
-                <li class="card-item">
+                <li class="card-item one">
                     <a href="#">
                         <figure class="card">
-                            <img src="images/1.png" />
+                            <div class="photos">
+                                <img src="images/2.png" class="card-img1" />
+                                <img src="images/1.png" class="card-img2" />
+                            </div>
                             <figcaption class="caption">
                                 £89.99
                             </figcaption>
@@ -200,7 +491,6 @@
                             </span>
                         </figure>
                     </a>
-
                     <div class="info">
                         <h3>Womens burnt orange casual tee £29.95</h3>
                         <p>
@@ -223,88 +513,147 @@
 
                     </div>
                 </li>
-                <li class="card-item">
-                    <a href="#">
-                        <figure class="card">
-                            <img src="images/1.png" />
-                            <figcaption class="caption">
-                                £89.99
-                            </figcaption>
-                            <span class="details-link">
-                                <i class="fa fa-info-circle "></i>
-                            </span>
-                        </figure>
-                    </a>
 
-                    <div class="info">
-                        <h3>Womens burnt orange casual tee £29.95</h3>
-                        <p>
-                            Classic casual t-shirt for women on the move.
-                            100% cotton.
-
-                        </p>
-                        <div class="controls">
-                            <button class="cart">
-                                <i class="fa fa-shopping-cart"></i>
-                            </button>
-                            <button class="wishlist">
-                                <i class="fa fa-heart"></i>
-                            </button>
-                            <button class="compare">
-                                <i class="fa fa-compress"></i>
-                            </button>
-
-                        </div>
-
-                    </div>
-                </li>
-                <li class="card-item">
-                    <a href="#">
-                        <figure class="card">
-                            <img src="images/1.png" />
-                            <figcaption class="caption">
-                                £89.99
-                            </figcaption>
-                            <span class="details-link">
-                                <i class="fa fa-info-circle "></i>
-                            </span>
-                        </figure>
-                    </a>
-
-                    <div class="info">
-                        <h3>Womens burnt orange casual tee £29.95</h3>
-                        <p>
-                            Classic casual t-shirt for women on the move.
-                            100% cotton.
-
-                        </p>
-                        <div class="controls">
-                            <button class="cart">
-                                <i class="fa fa-shopping-cart"></i>
-                            </button>
-                            <button class="wishlist">
-                                <i class="fa fa-heart"></i>
-                            </button>
-                            <button class="compare">
-                                <i class="fa fa-compress"></i>
-                            </button>
-
-                        </div>
-
-                    </div>
-                </li>
-                </ul>
+            </ul>
         </section>
         <!-- end cards -->
+        <hr>
+
     </main>
+
+    <section class="look-book-group">
+        <div class="look-book ">
+            <img src="images/1.png">
+            <div class="look-book-content">
+                <h3>
+                    MEN'S<br>
+                    <span style="font-weight: normal;">LOOKBOOK</span>
+                </h3>
+                <p>Lorem ipsum dolor sit amet eras facilisis
+                    consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+                    Elementum metus facilisis ut phasellu.
+
+                </p>
+                <a href="#" class="btn">
+                    VIEW NOW
+                </a>
+            </div>
+        </div>
+        <div class="look-book ">
+            <img src="images/1.png">
+            <div class="look-book-content">
+                <h3>
+                    WOMEN'S<br>
+                    <span style="font-weight: normal;">LOOKBOOK</span>
+                </h3>
+                <p>Lorem ipsum dolor sit amet eras facilisis
+                    consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+                    Elementum metus facilisis ut phasellu.
+
+                </p>
+                <a href="#" class="btn">
+                    VIEW NOW
+                </a>
+            </div>
+        </div>
+        <div class="look-book ">
+            <img src="images/1.png">
+            <div class="look-book-content">
+                <h3>
+                    YOUR<br>
+                    <span style="font-weight: normal;">LOOKBOOK</span>
+                </h3>
+                <p>Lorem ipsum dolor sit amet eras facilisis
+                    consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+                    Elementum metus facilisis ut phasellu.
+
+                </p>
+                <a href="#" class="btn">
+                    VIEW NOW
+                </a>
+            </div>
+        </div>
+
+    </section>
     <footer>
-        <section class="info"></section>
-        <section class="why-buy"></section>
-        <section class="account"></section>
-        <section class="look-up"></section>
-        <section class="contact"></section>
-        <section class="banners"></section>
-        <section class="copyright"></section>
+        <section class="f-links">
+            <div class="f-link">
+                <h3>INFORMATION </h3>
+                <ul>
+                    <li><a href="#">The brand</a></li>
+                    <li><a href="#">Local stores</a></li>
+                    <li><a href="#">Customer service</a></li>
+                    <li><a href="#">Privacy & cookies</a></li>
+                    <li><a href="#">Site map</a></li>
+                </ul>
+            </div>
+            <div class="f-link">
+                <h3>WHY BUY FROM US </h3>
+                <ul>
+                    <li><a href="#">Shipping & returns</a></li>
+                    <li><a href="#">Secure shopping</a></li>
+                    <li><a href="#">Customer service</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Award winning</a></li>
+                    <li><a href="#">Ethical trading</a></li>
+
+                </ul>
+            </div>
+            <div class="f-link">
+                <h3>YOUR ACCOUNT </h3>
+                <ul>
+                    <li><a href="#">Sign in</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">View cart</a></li>
+                    <li><a href="#">View your lookbook</a></li>
+                    <li><a href="#">Track an order</a></li>
+                    <li><a href="#">Update information</a></li>
+
+                </ul>
+            </div>
+            <div class="f-link">
+                <h3>LOOKBOOK </h3>
+                <ul>
+                    <li><a href="#">Latest posts</a></li>
+                    <li><a href="#">Men's lookbook</a></li>
+                    <li><a href="#">Women's lookbook</a></li>
+                    <li><a href="#">Lookbooks RSS feed</a></li>
+                    <li><a href="#">View your lookbook</a></li>
+                    <li><a href="#">Delete your lookbook</a></li>
+
+                </ul>
+            </div>
+            <div class="f-link">
+                <h3>CONTACT DETAILS </h3>
+                <ul>
+                    <li><a href="#" class="address">Head Office: Avenue Fashion,<br> 180-182 Regent Street, London.</a></li>
+                    <li><a href="#">Telephone: 0123-456-789 </a></li>
+                    <li><a href="#">Email: support@yourwebsite.com</a></li>
+
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="banners">
+            <div class="award">
+                <h3>
+                    award winner<br>
+                    <span style="font-weight: normal;">
+                        fashion awards 2016</span>
+                </h3>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>
+        </section>
+        <section class="copyright">
+            <span class="c-year">© 2016 Avenue Fashion™ </span>
+            <span class="c-author">Design by RobbyDesigns.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dev by Loremipsum.com</span>
+        </section>
     </footer>
 </body>
 

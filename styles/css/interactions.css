@@ -1,0 +1,30 @@
+button,.btn{
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+   
+}
+.main-bar .logo{
+    transition: transform 1s ease-out ;
+}
+.main-bar .logo:hover{
+    transform: rotate(-5deg);
+}
+.card-item figure{
+    perspective: 700px;
+}
+.card-item figure .photos{
+   transition: transform 1s cubic-bezier(0.55,-.62,.27,1.2) ;
+   transform-style: preserve-3d;
+}
+.card-item figure .card-img1,.card-item figure .card-img2{
+    backface-visibility: hidden;
+}
+.card-item figure .photos:hover{
+    transform: rotateY(-180deg);
+}
+ .card-item .card-img1{
+    transform: rotateY(180deg);
+} 
+
+
+
