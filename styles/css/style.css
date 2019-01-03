@@ -389,9 +389,8 @@ position: relative;
 .cards > .card-item{
     text-align: center;
     position: relative;
-    
-   
     background-color: #f8f8f8;
+  
 }
 
 .card-item .card{
