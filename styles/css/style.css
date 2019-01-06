@@ -666,7 +666,7 @@ footer >.copyright{
     font-family: "Montserrat";
     margin-right: 300px
 }
-.copyright >.c-author{
+.copyright >.c-author ,.copyright >.c-author a{
     font-size: 13px;
     line-height: 20px;
     color: #777777;
