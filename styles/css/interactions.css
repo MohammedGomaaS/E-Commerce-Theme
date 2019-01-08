@@ -9,17 +9,17 @@ button,.btn{
 .main-bar .logo:hover{
     transform: rotate(-5deg);
 }
-.card-item figure{
+.card-item .card{
     perspective: 700px;
 }
-.card-item figure .photos{
+.card-item .card .photos{
    transition: transform 1s cubic-bezier(0.55,-.62,.27,1.2) ;
    transform-style: preserve-3d;
 }
-.card-item figure .card-img1,.card-item figure .card-img2{
+.card-item .card .card-img1,.card-item .card .card-img2{
     backface-visibility: hidden;
 }
-.card-item figure .photos:hover{
+.card-item .card .photos:hover{
     transform: rotateY(-180deg);
 }
  .card-item .card-img1{

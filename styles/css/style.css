@@ -2,9 +2,14 @@
     font-family: DejaVu;
     src: url(fonts/DejaVuSans.ttf);
  }
- .home{
+body{
      margin: 0px;
  }
+ /* for old browsers except Internet Explorer prior to version 9 */
+ header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+  }
+  /* end */
  .top-bar{
     height: 45px;
     background-color: #333333;
@@ -115,7 +120,7 @@ font-family: "Montserrat";
 
 ;
 }
-.nav-bar{
+nav{
     margin-left: auto;
 }
 
@@ -323,9 +328,9 @@ border: 2px solid #737373;
   }
   /* end slider */
   /* start main content */
-  .main-content{
+  .home-products{
       margin-right: 67px;
-      margin-left:76px
+      margin-left:67px
   }
 hr{
     margin-top: 60px;
@@ -352,28 +357,28 @@ padding: 0;
 }
 
 
-.cards > .double{
+.cards  .double{
     grid-column: span 2;
     grid-row: span 2;
     min-width:350px;
     max-width: 530px;
 }
-.card-item figure {
+.card-item .card {
     overflow: hidden;
    
 }
 .photos{
 position: relative;
 }
-.cards >.double figure img{
+.cards .double .card img{
     max-width: 530px;
     min-width:350px;
     max-height: 350px;
 }
-.cards > .one{
+.cards  .one{
     max-width: 250px;
 }
-.cards > .one figure img{
+.cards  .one .card img{
     max-width: 200px;
     max-height: 200px;
    
@@ -386,7 +391,7 @@ position: relative;
     right: 0;
     margin:auto
 }
-.cards > .card-item{
+.cards  .card-item{
     text-align: center;
     position: relative;
     background-color: #f8f8f8;
@@ -421,7 +426,7 @@ display:none;
 }
 /* info */
 
-.card-item > .info{
+.card-item  .info{
     background-color: #ffffff;
     display: none;
     padding: 10px;
@@ -443,7 +448,7 @@ background-color: #f8f8f8;
 }
 
 
-.card-item >.info>h3{
+.card-item  .info>h3{
    
     font-size: 13px;
     line-height: 20px;
@@ -452,7 +457,7 @@ background-color: #f8f8f8;
     text-align: center;
 
 }
-.card-item >.info>p{
+.card-item .info>p{
    
     font-size: 15px;
     line-height: 22px;
