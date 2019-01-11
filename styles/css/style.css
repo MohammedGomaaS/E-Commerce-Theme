@@ -43,7 +43,7 @@ a {
 }
 
 .dropdown {
-    padding-right: 340px;
+    
     position: relative;
 }
 
@@ -540,7 +540,38 @@ font-weight: 400;
 text-transform: capitalize;
 
 }
-
+.product-details-options{
+display: grid;
+grid-template-columns: auto auto auto;
+grid-column-gap: 27px;
+}
+.product-option{
+display: block;
+}
+.product-option-label{
+    font-size: 13px;
+line-height: 30px;
+color: #575153;
+font-family: "Montserrat";
+font-weight: bold;
+text-transform: uppercase;
+}
+.product-option .dropdown{
+ display: flex;
+ align-items: center;
+    height: 35px;
+    background-color: rgba(45,113,240,0);
+    border: 1px solid #e7e7e7;
+    padding-right:0;
+}
+.product-option .dropdown a{
+    font-size: 13px;
+line-height: 22px;
+color: #989898;
+font-family: "Montserrat";
+font-weight: 300;
+padding:10px;
+}
 
 
 
