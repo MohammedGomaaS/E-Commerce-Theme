@@ -27,8 +27,11 @@ body{
  a{
     text-decoration: none;
  }
+ .currency{
+    padding-right:340px;
+ }
  .dropdown{
-     padding-right:340px;
+    
      position:relative;
 
  }
