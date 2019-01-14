@@ -509,15 +509,18 @@ nav {
 
 .local-store-loaction-details>* {
     display: inline-block;
+    vertical-align: top;
     
 }
-.local-store-loaction-details .googleMap{
-    width: 660px;
-height: 530px;
+.local-store-loaction-details .googleMap *{
+    width: 800px;
+height: 615px;
 background-color: #333;
 }
 .local-store-loaction-details-data{
+    padding-top:40px;
     padding-left:40px;
+    padding-right:40px;
     box-sizing: border-box;
 }
 
