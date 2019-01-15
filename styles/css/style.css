@@ -428,6 +428,130 @@ nav {
 
 /* end pg header  */
 
+/*local stores*/
+
+.local-store-loactions {
+    display: block;
+    margin-top: 62px;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.local-store-loaction {
+    display: inline-block;
+}
+
+.local-store-loaction>* {
+    display: block;
+}
+
+.local-store-loaction h2 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #575153;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.local-store-loaction h3 {
+    width: 370px;
+    height: 23px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #727272;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.local-store-loaction p {
+    width: 370px;
+    height: 95px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #8e8c8c;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.local-store-loaction ul {
+    list-style: none;
+    padding: 0;
+}
+
+.local-store-loaction ul li {
+    font-size: 14px;
+    line-height: 32px;
+    color: #8e8c8c;
+    font-family: "Montserrat";
+    font-weight: 300;
+}
+
+.local-store-loaction ul span {
+    margin-left: 16px;
+}
+
+.local-store-loaction ul i {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.local-store-loaction .btn {
+    float: left;
+}
+
+.local-store-loaction-details {
+    margin-top: 64px;
+    background-color: #f8f8f8;
+}
+
+
+.local-store-loaction-details>* {
+    display: inline-block;
+    vertical-align: top;
+    
+}
+.local-store-loaction-details .googleMap *{
+    width: 800px;
+height: 615px;
+background-color: #333;
+}
+.local-store-loaction-details-data{
+    padding-top:40px;
+    padding-left:40px;
+    padding-right:40px;
+    box-sizing: border-box;
+}
+
+
+.location-details-social-links  {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.circle-btn  {
+    display: inline-flex;
+    justify-content: center;
+    width: 30px;
+height: 30px;
+border-radius: 15px;
+background-color: #727272;
+align-items: center;
+
+
+}
+.circle-btn a{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 48px;
+    color: #ffffff;
+    font-family: "Font Awesome";
+}
+
+/* end local stores */
+
 /* product details */
 
 .main-product-content>* {
