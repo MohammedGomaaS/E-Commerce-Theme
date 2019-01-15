@@ -428,6 +428,95 @@ nav {
 
 /* end pg header  */
 
+/* the brand */
+
+.the-brand-container {
+    margin-top: 62px;
+    position: relative;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+.the-brand-post{
+    
+    width: fit-content;
+  
+}
+
+.the-brand-post.side-content>* {
+    display: inline-block;
+    
+    vertical-align: top;
+}
+
+.the-brand-post.side-content .the-brand-post-content {
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.the-brand-post-neighbour{
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+}
+.the-brand-post.the-brand-post-container{
+    margin-top:65px; 
+}
+
+.the-brand-post-content {
+    margin-top: 30px;
+}
+
+.the-brand-post img {
+    width: 570px;
+    height: 400px;
+    background-color: #f8f8f8;
+}
+
+.the-brand-post h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 20px;
+    color: #575153;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.the-brand-post h3 {
+    margin-top: 30px;
+    text-transform: uppercase;
+    width: 570px;
+    height: 22px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #727272;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.the-brand-post p {
+    margin-top: 20px;
+    width: 570px;
+    height: 114px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #8e8c8c;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+.the-brand-awards{
+    width: fit-content;
+    display: inline-flex;
+    width: 570px;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+
+}
+
+/* end the brand */
+
 /*local stores*/
 
 .local-store-loactions {
@@ -506,43 +595,40 @@ nav {
     background-color: #f8f8f8;
 }
 
-
 .local-store-loaction-details>* {
     display: inline-block;
     vertical-align: top;
-    
 }
-.local-store-loaction-details .googleMap *{
+
+.local-store-loaction-details .googleMap * {
     width: 800px;
-height: 615px;
-background-color: #333;
+    height: 615px;
+    background-color: #333;
 }
-.local-store-loaction-details-data{
-    padding-top:40px;
-    padding-left:40px;
-    padding-right:40px;
+
+.local-store-loaction-details-data {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     box-sizing: border-box;
 }
 
-
-.location-details-social-links  {
+.location-details-social-links {
     list-style: none;
     padding: 0;
-    
 }
 
-.circle-btn  {
+.circle-btn {
     display: inline-flex;
     justify-content: center;
     width: 30px;
-height: 30px;
-border-radius: 15px;
-background-color: #727272;
-align-items: center;
-
-
+    height: 30px;
+    border-radius: 15px;
+    background-color: #727272;
+    align-items: center;
 }
-.circle-btn a{
+
+.circle-btn a {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 48px;
@@ -1025,7 +1111,6 @@ input[type=number] {
     float: right;
     margin: 0;
 }
-
 
 .sign-in-up-container form a {
     color: #00c8c8;
