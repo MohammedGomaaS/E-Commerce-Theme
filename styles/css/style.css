@@ -437,15 +437,13 @@ nav {
     margin-right: auto;
     margin-left: auto;
 }
-.the-brand-post{
-    
+
+.the-brand-post {
     width: fit-content;
-  
 }
 
 .the-brand-post.side-content>* {
     display: inline-block;
-    
     vertical-align: top;
 }
 
@@ -453,13 +451,15 @@ nav {
     margin-top: 60px;
     margin-left: 30px;
 }
-.the-brand-post-neighbour{
+
+.the-brand-post-neighbour {
     position: absolute;
     right: 0;
     bottom: 100px;
 }
-.the-brand-post.the-brand-post-container{
-    margin-top:65px; 
+
+.the-brand-post.the-brand-post-container {
+    margin-top: 65px;
 }
 
 .the-brand-post-content {
@@ -503,7 +503,8 @@ nav {
     font-family: "Roboto";
     font-weight: 400;
 }
-.the-brand-awards{
+
+.the-brand-awards {
     width: fit-content;
     display: inline-flex;
     width: 570px;
@@ -511,8 +512,6 @@ nav {
     position: absolute;
     right: 0;
     bottom: 0;
-    
-
 }
 
 /* end the brand */
@@ -1183,8 +1182,24 @@ hr {
 .cards .double {
     grid-column: span 2;
     grid-row: span 2;
-    min-width: 350px;
-    max-width: 530px;
+    /* min-width: 350px;
+    max-width: 530px; */
+}
+
+.cards .col-2 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.cards .col-3 {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.cards .col-2 .card img,
+.cards .col-3 .card img {
+    width: 200px;
+    height: 450px;
 }
 
 .card-item .card {
@@ -1196,18 +1211,18 @@ hr {
 }
 
 .cards .double .card img {
-    max-width: 530px;
-    min-width: 350px;
-    max-height: 350px;
+    /* max-width: 530px; */
+    width: 350px;
+    height: 500px;
 }
 
 .cards .one {
-    max-width: 250px;
+    /* width: 250px; */
 }
 
 .cards .one .card img {
-    max-width: 200px;
-    max-height: 200px;
+    width: 200px;
+    height: 400px;
 }
 
 .card-img2 {
@@ -1241,17 +1256,38 @@ hr {
     position: absolute;
     top: 16px;
     left: 18px;
+    text-transform: uppercase;
 }
 
 .details-link {
     position: absolute;
     top: 50%;
-    left: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 48px;
     line-height: 20px;
     color: #ffffff;
-    box-shadow: 1px 1.732px 16px rgba(0, 0, 0, 0.13);
+    /* box-shadow: 1px 1.732px 16px rgba(0, 0, 0, 0.13); */
+    border-radius: 50%;
     display: none;
+}
+
+.card-links {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-links a {
+   margin-right:5px;
+   margin-left:5px;
+    font-size: 48px;
+    line-height: 20px;
+    color: #ffffff;
+    font-family: "Font Awesome";
+    /* box-shadow: 1px 1.732px 16px rgba(0, 0, 0, 0.13); */
 }
 
 /* info */
@@ -1267,7 +1303,8 @@ hr {
 }
 
 .card-item:hover .info,
-.card-item:hover .details-link {
+.card-item:hover .details-link ,
+.card-item:hover .card-links {
     display: block;
 }
 
@@ -1317,12 +1354,106 @@ hr {
 /* end card item */
 
 /* look-book */
+.look-book-card-container{
+
+}
+.look-book-card{
+    position: relative;
+     box-sizing: border-box;
+     padding-right:20px;
+     padding-left:20px;
+     background-color: #f8f8f8;
+ }
+ .look-book-card-win{
+   position: absolute;  
+   z-index: 2;
+   right: 0;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.look-book-card-win h1{
+    font-size: 133px;
+    letter-spacing: 5px;
+    line-height: 14px;
+    color: #00c8c8;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom:80px; 
+}
+.look-book-card-win h2{
+    font-size: 54px;
+    letter-spacing: 3px;
+    line-height: 14px;;
+color: #00c8c8;
+font-family: "Montserrat";
+font-weight: 700;
+text-align: right;
+text-transform: uppercase;
+}
+ .look-book-card img{
+     width: 200px;
+     height: 400px;
+     position: absolute;
+     left: 55%;
+    z-index: 1;
+    
+  
+ }
+ 
+ .look-book-card-content{
+    position: relative;
+    
+   z-index: 3;
+ }
+ .look-book-card-content h2{
+     margin-top: 30px;
+     margin-bottom: 30px;
+     font-size: 48px;
+     letter-spacing: 2px;
+     line-height: 54px;
+     color: #575153;
+     font-family: "Montserrat";
+     font-weight: 700;
+     text-transform: uppercase;
+ }
+ .look-book-card-content h3{
+     width: 394px;
+     height: 23px;
+     margin-bottom: 20px;
+     font-size: 13px;
+     line-height: 20px;
+     color: #727272;
+     font-family: "Montserrat";
+     font-weight: 400;
+     text-transform: uppercase;
+ }
+
+.look-book-card-content.win h3{
+    width: 501px !important;
+    height: 19px !important;
+}
+ .look-book-card p{
+     width:50%;
+     font-size: 15px;
+     line-height: 22px;
+     color: #8e8c8c;
+     font-family: "Roboto";
+     font-weight: 400;
+ }
+ 
+ .look-book-card .btn{
+     float:left;
+ }
 
 .look-book-group {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 
 .look-book {
     width: 359px;
