@@ -1153,7 +1153,9 @@ hr.vertical {
     margin-right: 67px;
     margin-left: 67px
 }
-
+.hidden{
+    visibility: hidden;
+}
 hr {
     margin-top: 60px;
     margin-bottom: 60px;
