@@ -4,7 +4,7 @@
     <!-- meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="just for playing" />
     <meta name="author" content="Mohammed Gomaa" />
     <!-- end meta -->
@@ -12,7 +12,9 @@
     <link href="faveicon.ico" rel="shortcut icon">
     <!-- styles -->
     <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="styles/css/responsive.css">
     <link rel="stylesheet" href="styles/css/interactions.css">
+    <link rel="stylesheet" href="styles/css/normalize.css">
     <!-- end styles -->
     <!-- cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -52,7 +54,7 @@
                 <!-- end logo -->
                 <!-- navigation menu -->
                 <nav class="inline-menu">
-                    <ul>
+                    <ul clearfix>
                         <li><a class="inline-menu-active" href="#">MENS <br>
                                 <i class="fa fa-angle-down "></i>
                             </a>
@@ -267,14 +269,32 @@
         </header>
         <!-- end main header -->
        <!-- main slider -->
-        <section class="slider">
-                <div class="slider-item">
+        <section class="slider ">
+               
+                <div class="slider-item my-slider fade">
                     <img alt="some text here" src="images/2.png">
                     <h1>AVE</h1>
                     <a href="#">
                         shop men’s collection
                     </a>
                 </div>
+                <div class="slider-item fade my-slider">
+                        <img alt="some text here" src="images/1.png">
+                        <h1>AVE</h1>
+                        <a href="#">
+                            shop men’s collection
+                        </a>
+                    </div>
+                    <div class="slider-item fade my-slider">
+                            <img alt="some text here" src="images/3.png">
+                            <h1>AVE</h1>
+                            <a href="#">
+                                shop women’s collection
+                            </a>
+                        </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </section>
         <!-- end main slider -->
         <main>
@@ -282,7 +302,7 @@
                 <hr />
                 <!-- menu -->
                 <div class="inline-menu">
-                    <ul>
+                    <ul class="clearfix">
                         <li><a class="inline-menu-active" href="#">POPULAR </a>
                         </li>
                         <li><a href="#">NEW ARRIVAL </a>
@@ -538,7 +558,7 @@
                 <!-- end cards -->
                 <hr>
             </section>
-            <section class="look-book-group">
+            <section class="look-book-group clearfix">
                 <div class="look-book ">
                     <img alt="some text here" src="images/1.png">
                     <div class="look-book-content">
@@ -556,6 +576,8 @@
                         </a>
                     </div>
                 </div>
+                <!-- space -->
+                <div style="width:10px;height:7px;"></div>
                 <div class="look-book ">
                     <img alt="some text here" src="images/1.png">
                     <div class="look-book-content">
@@ -573,6 +595,8 @@
                         </a>
                     </div>
                 </div>
+                <!-- space -->
+                <div style="width:10px;height:7px;"></div>
                 <div class="look-book ">
                     <img alt="some text here" src="images/1.png">
                     <div class="look-book-content">
@@ -596,7 +620,7 @@
 
 
         <footer>
-            <section class="f-links">
+            <section class="f-links clearfix">
                 <div class="f-link">
                     <h3>INFORMATION </h3>
                     <ul>
@@ -653,7 +677,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="banners">
+            <section class="banners clearfix">
                 <div class="award">
                     <h3>
                         award winner<br>
@@ -661,6 +685,7 @@
                             fashion awards 2016</span>
                     </h3>
                 </div>
+               
                 <div class="social">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -682,6 +707,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="styles/js/lib/waypoints/lib/jquery.waypoints.min.js"></script>
     <script src="styles/js/script.js"></script>
+    <script src="styles/js/slider.js"></script>
     <!-- end scripts -->
 </body>
 
