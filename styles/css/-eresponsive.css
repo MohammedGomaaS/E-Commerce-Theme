@@ -222,17 +222,17 @@
         margin: auto;
     }
     
-    .sub-nav-link {
+    .sub-nav-links-group {
         display: inline-grid;
         margin-right: 1.875rem;
         margin-left: 1.875rem;
     }
     
-    .sub-nav-link>* {
+    .sub-nav-links-group>* {
         text-align: left;
     }
     
-    .sub-nav-link>h3 {
+    .sub-nav-links-group>h3 {
         text-transform: uppercase;
         font-size: 0.75rem;
         line-height: 1.25rem;
@@ -240,17 +240,17 @@
         font-family: "Montserrat";
     }
     
-    .sub-nav-link>ul {
+    .sub-nav-links-group>ul {
         list-style: none;
         margin-top: 0.9375rem;
         padding: 0;
     }
     
-    .sub-nav-link>ul>li {
+    .sub-nav-links-group>ul>li {
         display: block;
     }
     
-    .sub-nav-link>ul>li>a {
+    .sub-nav-links-group>ul>li>a {
         font-size: 0.875rem;
         line-height: 1.875rem;
         color: #727272;
