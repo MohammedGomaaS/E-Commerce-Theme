@@ -6,13 +6,13 @@ It is a a theme made by HTML5&CSS3 .
 
 ## Info
 
- - It is not completed and not responsive until now.
+ - It is not completed .
+ - it's responsive, but there are some bags , i'm working on it. 
  - You  can find the design(.psd) in this path ('./PSD');
 ## How To Start
 
  - Clone the repository.
  - open ./index/html
- - Styles int this path ('./style')
+ - Styles in to this path ('./style')
 
 
- 
