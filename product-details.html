@@ -5,7 +5,7 @@
     <!-- meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="just for playing" />
     <meta name="author" content="Mohammed Gomaa" />
     <!-- end meta -->
@@ -27,7 +27,16 @@
 </head>
 
 <body>
-    <div class="wrapper">
+
+    <!-- side nav -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    </div>
+
+    <!-- end side nav -->
+    <div class="wrapper" id="wrapper">
+        <span class="side-nav-btn" onclick="openNav()">&#9776;</span>
         <!-- start main header -->
         <header>
             <!-- top bar  -->
@@ -53,14 +62,15 @@
                 </div>
                 <!-- end logo -->
                 <!-- navigation menu -->
-                <nav class="inline-menu">
-                    <ul clearfix>
+                <nav class="inline-menu" id="main-nav">
+                    <ul class="clearfix">
                         <li><a class="inline-menu-active" href="#">MENS <br>
                                 <i class="fa fa-angle-down "></i>
                             </a>
                             <div class="sub-nav">
+                                
                                 <section class="sub-nav-links">
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>casuals </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -72,7 +82,7 @@
 
                                         </ul>
                                     </div>
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>Formal </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -99,8 +109,9 @@
                                 <i class="fa fa-angle-down " style="padding-left: 5px"></i>
                             </a>
                             <div class="sub-nav">
+                                    
                                 <section class="sub-nav-links">
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>casuals </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -112,7 +123,7 @@
 
                                         </ul>
                                     </div>
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>Formal </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -139,8 +150,9 @@
                                 <i class="fa fa-angle-down " style="padding-left: 5px"></i>
                             </a>
                             <div class="sub-nav">
+                                    
                                 <section class="sub-nav-links">
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>casuals </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -152,7 +164,7 @@
 
                                         </ul>
                                     </div>
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>Formal </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -175,12 +187,13 @@
                                 </section>
                             </div>
                         </li>
-                        <li><a href="local-stores.html"> LOCAL STORES<br>
+                        <li>
+                            <a href="local-stores.html"> LOCAL STORES<br>
                                 <i class="fa fa-angle-down " style="padding-left: 5px"></i>
                             </a>
                             <div class="sub-nav">
                                 <section class="sub-nav-links">
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>casuals </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -192,7 +205,7 @@
 
                                         </ul>
                                     </div>
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>Formal </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -215,12 +228,13 @@
                                 </section>
                             </div>
                         </li>
-                        <li><a href="look-book.html">LOOK BOOK <br>
+                        <li>
+                            <a href="look-book.html">LOOK BOOK <br>
                                 <i class="fa fa-angle-down " style="padding-left: 5px"></i>
                             </a>
                             <div class="sub-nav">
                                 <section class="sub-nav-links">
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>casuals </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -232,7 +246,7 @@
 
                                         </ul>
                                     </div>
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>Formal </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -265,7 +279,7 @@
                 </div>
                 <!-- end search input -->
             </section>
-            
+
         </header>
         <!-- end main header -->
         <!-- special header for page -->
@@ -349,7 +363,7 @@
                     <section class="product-details-options container">
                         <div class="product-option">
                             <div class="product-option-label">Colour</div>
-                            <div class="dropdown dp"><a href="#">Select Colour<i class="fa fa-angle-down " style="padding-left: 50px"></i></a>
+                            <div class="dropdown dp"><a class="pointer">Select Colour<i class="fa fa-angle-down " style="padding-left: 50px"></i></a>
                                 <div class="dropdown-content">
                                     <a href="#">Black</a>
                                     <a href="#">White</a>
@@ -360,7 +374,7 @@
                         </div>
                         <div class="product-option">
                             <div class="product-option-label">Size</div>
-                            <div class="dropdown dp"><a href="#">Select Size <i class="fa fa-angle-down " style="padding-left: 50px"></i></a>
+                            <div class="dropdown dp"><a class="pointer">Select Size <i class="fa fa-angle-down " style="padding-left: 50px"></i></a>
                                 <div class="dropdown-content">
                                     <a href="#">L</a>
                                     <a href="#">M</a>
@@ -508,6 +522,7 @@
     <script src="styles/js/lib/waypoints/lib/jquery.waypoints.min.js"></script>
     <script src="styles/js/slider.js"></script>
     <script src="styles/js/script.js"></script>
+    <script src="styles/js/sidenav.js"></script>
     <!-- end scripts -->
 </body>
 

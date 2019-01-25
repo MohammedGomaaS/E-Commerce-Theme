@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- meta -->
     <meta charset="utf-8">
@@ -26,13 +27,21 @@
 </head>
 
 <body>
-   
-    <div class="wrapper">
-         <!-- start main header -->
+
+    <!-- side nav -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    </div>
+
+    <!-- end side nav -->
+    <div class="wrapper" id="wrapper">
+        <span class="side-nav-btn" onclick="openNav()">&#9776;</span>
+        <!-- start main header -->
         <header>
             <!-- top bar  -->
             <section class="top-bar">
-                <div class="dropdown currency"><a href="#">Currency:GPB <i class="fa fa-angle-down " style="padding-left: 5px"></i></a>
+                <div class="dropdown currency"><a class="pointer">Currency:GPB <i class="fa fa-angle-down " style="padding-left: 5px"></i></a>
                     <div class="dropdown-content">
                         <a href="#">GPB</a>
                         <a href="#">EGP</a>
@@ -53,14 +62,15 @@
                 </div>
                 <!-- end logo -->
                 <!-- navigation menu -->
-                <nav class="inline-menu">
-                    <ul clearfix>
+                <nav class="inline-menu" id="main-nav">
+                    <ul class="clearfix">
                         <li><a class="inline-menu-active" href="#">MENS <br>
                                 <i class="fa fa-angle-down "></i>
                             </a>
                             <div class="sub-nav">
+                                
                                 <section class="sub-nav-links">
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>casuals </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -72,7 +82,7 @@
 
                                         </ul>
                                     </div>
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>Formal </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -99,8 +109,9 @@
                                 <i class="fa fa-angle-down " style="padding-left: 5px"></i>
                             </a>
                             <div class="sub-nav">
+                                    
                                 <section class="sub-nav-links">
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>casuals </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -112,7 +123,7 @@
 
                                         </ul>
                                     </div>
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>Formal </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -139,8 +150,9 @@
                                 <i class="fa fa-angle-down " style="padding-left: 5px"></i>
                             </a>
                             <div class="sub-nav">
+                                    
                                 <section class="sub-nav-links">
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>casuals </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -152,7 +164,7 @@
 
                                         </ul>
                                     </div>
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>Formal </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -175,12 +187,13 @@
                                 </section>
                             </div>
                         </li>
-                        <li><a href="local-stores.html"> LOCAL STORES<br>
+                        <li>
+                            <a href="local-stores.html"> LOCAL STORES<br>
                                 <i class="fa fa-angle-down " style="padding-left: 5px"></i>
                             </a>
                             <div class="sub-nav">
                                 <section class="sub-nav-links">
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>casuals </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -192,7 +205,7 @@
 
                                         </ul>
                                     </div>
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>Formal </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -215,12 +228,13 @@
                                 </section>
                             </div>
                         </li>
-                        <li><a href="look-book.html">LOOK BOOK <br>
+                        <li>
+                            <a href="look-book.html">LOOK BOOK <br>
                                 <i class="fa fa-angle-down " style="padding-left: 5px"></i>
                             </a>
                             <div class="sub-nav">
                                 <section class="sub-nav-links">
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>casuals </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -232,7 +246,7 @@
 
                                         </ul>
                                     </div>
-                                    <div class="sub-nav-link">
+                                    <div class="sub-nav-links-group">
                                         <h3>Formal </h3>
                                         <ul>
                                             <li><a href="#">Jackets</a></li>
@@ -265,37 +279,37 @@
                 </div>
                 <!-- end search input -->
             </section>
-            
+
         </header>
         <!-- end main header -->
-       <!-- main slider -->
+        <!-- main slider -->
         <section class="slider ">
-               
-                <div class="slider-item my-slider fade">
-                    <img alt="some text here" src="images/2.png">
-                    <h1>AVE</h1>
-                    <a href="#">
-                        shop men’s collection
-                    </a>
-                </div>
-                <div class="slider-item fade my-slider">
-                        <img alt="some text here" src="images/1.png">
-                        <h1>AVE</h1>
-                        <a href="#">
-                            shop men’s collection
-                        </a>
-                    </div>
-                    <div class="slider-item fade my-slider">
-                            <img alt="some text here" src="images/3.png">
-                            <h1>AVE</h1>
-                            <a href="#">
-                                shop women’s collection
-                            </a>
-                        </div>
 
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </section>
+            <div class="slider-item my-slider fade">
+                <img alt="some text here" src="images/2.png">
+                <h1>AVE</h1>
+                <a href="#">
+                    shop men’s collection
+                </a>
+            </div>
+            <div class="slider-item fade my-slider">
+                <img alt="some text here" src="images/1.png">
+                <h1>AVE</h1>
+                <a href="#">
+                    shop men’s collection
+                </a>
+            </div>
+            <div class="slider-item fade my-slider">
+                <img alt="some text here" src="images/3.png">
+                <h1>AVE</h1>
+                <a href="#">
+                    shop women’s collection
+                </a>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </section>
         <!-- end main slider -->
         <main>
             <section class="home-products">
@@ -685,7 +699,7 @@
                             fashion awards 2016</span>
                     </h3>
                 </div>
-               
+
                 <div class="social">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -706,8 +720,10 @@
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="styles/js/lib/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="styles/js/jquery.min.js"></script>
     <script src="styles/js/script.js"></script>
     <script src="styles/js/slider.js"></script>
+    <script src="styles/js/sidenav.js"></script>
     <!-- end scripts -->
 </body>
 
