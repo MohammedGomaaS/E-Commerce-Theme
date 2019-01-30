@@ -1,35 +1,63 @@
 button,.btn{
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+         -o-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
    
 }
 .main-bar .logo{
+    -webkit-transition: -webkit-transform 1s ease-out;
+    transition: -webkit-transform 1s ease-out;
+    -o-transition: transform 1s ease-out ;
     transition: transform 1s ease-out ;
+    transition: transform 1s ease-out, -webkit-transform 1s ease-out;
 }
 .main-bar .logo:hover{
-    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+            transform: rotate(-5deg);
 }
 .card-item .card{
-    perspective: 700px;
+    -webkit-perspective: 700px;
+            perspective: 700px;
 }
 .card-item .card .photos{
+   -webkit-transition: -webkit-transform 1s cubic-bezier(0.55,-.62,.27,1.2);
+   transition: -webkit-transform 1s cubic-bezier(0.55,-.62,.27,1.2);
+   -o-transition: transform 1s cubic-bezier(0.55,-.62,.27,1.2) ;
    transition: transform 1s cubic-bezier(0.55,-.62,.27,1.2) ;
-   transform-style: preserve-3d;
+   transition: transform 1s cubic-bezier(0.55,-.62,.27,1.2), -webkit-transform 1s cubic-bezier(0.55,-.62,.27,1.2);
+   -webkit-transform-style: preserve-3d;
+           transform-style: preserve-3d;
 }
 .card-item .card .card-img1,.card-item .card .card-img2{
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
 }
 .card-item .card .photos:hover{
-    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
 }
  .card-item .card-img1{
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 } 
 
 /* Fading animation */
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+  }
+  
+
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
   }
   
 
@@ -38,6 +66,5 @@ button,.btn{
     from {opacity: .4} 
     to {opacity: 1}
   }
-
 
 
