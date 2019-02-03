@@ -6,7 +6,8 @@
 
 html,
 body {
-    overflow-x: hidden
+    overflow-x: hidden;
+    text-rendering: geometricPrecision;
 }
 
 @font-face {
@@ -492,7 +493,7 @@ nav {
 }
 
 .slider-item {
-    height: 32.5rem;
+    height: 100vh;
     position: relative;
     display: none
 }

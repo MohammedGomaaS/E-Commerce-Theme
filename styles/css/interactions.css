@@ -67,4 +67,10 @@ button,.btn{
     to {opacity: 1}
   }
 
+  /* animation */
+  .animate-box{
+opacity: 0;
+animation-duration: 1s;
+}
+
 
